@@ -1,0 +1,205 @@
+// nav {
+// 	height: 100px;
+// }
+// LOGO
+.navbar-default {
+	background-color: white;
+	border-color: white;
+}
+.container {
+	padding: 0;
+	position: relative;
+}
+// 导航菜单
+.nav_color {
+	margin-bottom: 0;
+}
+.navbar-header {
+	.navbar-brand {
+		height: auto;
+		padding: 25px 15px;
+		display: block;
+		img {
+			height: 50px;
+			width: auto;
+			transition: 0.8s;
+		}
+	}
+}
+.cleakFolet {
+	width: 100%;
+	height: 100px;
+	display: block;
+}
+
+// 导航栏菜单
+#example-navbar-collapse {
+	.navbar-nav {
+		float: right;
+		li {
+			&:hover {
+				border-bottom: #409eff 3px solid;
+			}
+			a {
+				color: #303133;
+				background: #fff;
+				font-size: 16px;
+				line-height: 50px;
+				padding: 25px 25px;
+				transition: 0.5s;
+				&:hover {
+					color: #409eff;
+				}
+			}
+		}
+	}
+}
+.borderBtoomcolor {
+	border-bottom: #409eff 3px solid;
+}
+// 尾部样式
+.footerStyle {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #409eff;
+	width: 100%;
+	height: 50px;
+	z-index: 10;
+	div {
+		padding: 0;
+		&:nth-of-type(1) {
+			border-right: white 1px solid;
+			height: 50px;
+			text-align: center;
+			color: white;
+		}
+		&:nth-of-type(2) {
+			height: 50px;
+			text-align: center;
+			color: white;
+		}
+		a {
+			font-size: 14px;
+			line-height: 50px;
+			&:hover {
+				color: white;
+			}
+			img {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+// 导航菜单字体颜色
+#example-navbar-collapse .navbar-nav .active a {
+	color: #409eff;
+}
+.navbar-default .navbar-toggle {
+	border-color: #409eff;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+.navbar-default .navbar-toggle:active {
+	background-color: transparent;
+}
+// 导航按钮 下拉菜单颜色
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #409eff;
+}
+.navbar-toggle {
+	margin-right: 30px;
+}
+
+// 媒体像素在 1200--992px
+@media (max-width: 1200px) and (min-width: 992px) {
+	// 导航菜单字体样式
+	#example-navbar-collapse .navbar-nav li a {
+		line-height: 30px;
+		padding: 25px 20px;
+		transition: 0.8s;
+	}
+	// LOGO
+	.navbar-header .navbar-brand img {
+		height: 40px;
+		width: auto;
+	}
+	.cleakFolet {
+		height: 90px;
+	}
+}
+// 媒体像素在 992px---768px
+@media (max-width: 992px) and (min-width: 768px) {
+	#example-navbar-collapse .navbar-nav li a {
+		line-height: 30px;
+		padding: 15px 15px;
+		font-size: 14px;
+		transition: 0.8s;
+	}
+	// LOGO
+	.navbar-header .navbar-brand img {
+		height: 30px;
+		width: auto;
+	}
+	.cleakFolet {
+		height: 80px;
+	}
+}
+// 媒体像素在 768px以上
+@media (min-width: 768px) {
+	.navbar-collapse .navbar-nav li a {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+// 媒体像素在 768px以下
+@media (max-width: 768px) {
+	// 导航菜单
+	.nav_color {
+		min-height: 40px;
+		border: none;
+	}
+	// LOG
+	.navbar-header .navbar-brand img {
+		height: 30px;
+		width: auto;
+		display: block;
+	}
+	#example-navbar-collapse .navbar-nav li a {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 10px 0;
+		text-align: center;
+		color: #fff;
+		background-color: #92b8e0;
+		float: none;
+	}
+	#example-navbar-collapse .navbar-nav li a:hover {
+		background-color: #409eff;
+		color: white;
+	}
+	#example-navbar-collapse .navbar-nav {
+		float: none;
+	}
+	#example-navbar-collapse .navbar-nav .active a {
+		background-color: #409eff;
+		color: white;
+	}
+	// 导航下拉菜单
+	.navbar-heade .navbar-toggle {
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+	.navbar-header .navbar-brand {
+		padding: 10px 15px;
+	}
+	.line {
+		display: none;
+	}
+	.cleakFolet {
+		height: 50px;
+	}
+}
